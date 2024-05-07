@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Inconsolata', monospace;
+            background-color: #333333; /* Changed to dark grey */
+            color: green; /* Changed to green */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 96px; /* Changed to 96px */
+            color: green; /* Changed to green */
+        }
+
+        h2, .section-title {
+            font-weight: bold;
+            font-size: 48px;
+            color: green; /* Changed to green */
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 160px; /* Adjusted width */
+            height: 2px;
+            background-color: white; /* White line underneath */
+            position: absolute;
+            bottom: -10px; /* Adjust position as needed */
+            left: calc(50% - 80px); /* Center the line */
+            margin-top: 10px; /* Add space below the line */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 50px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #about, #projects {
+            background-color: black;
+            text-align: center;
+        }
+
+        #connect {
+            background-color: black;
+            text-align: left;
+        }
+
+        .section-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: green; /* Changed to green */
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px; /* Added spacing between each entry */
+            font-size: 18px; /* Changed to 18px */
+        }
+
+        /* Increase font size for specific paragraphs */
+        #about p, #projects p, #connect p {
+            font-size: 20px; /* Changed to 20px */
+        }
+
+        /* Increase width of line under "Connect with Me" and center it */
+        #connect .section-title::after {
+            width: 320px; /* 2x the previous width */
+            left: calc(50% - 160px); /* Center the line */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>welcome;</h1> <!-- Font size increased to 96px -->
+    </div>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">about_me</h2>
+            <div class="section-content">
+                <p>My name is Amy Saad, and I'm on a journey as an undergraduate student pursuing my Bachelor of Science degree in Computer Science. I'm deeply passionate about leveraging technology to create positive change and solve real-world problems. Whether it's through innovative software solutions, cutting-edge research, or impactful projects, I'm dedicated to making a meaningful difference in the world. I believe that technology has the power to transform lives, empower individuals, and shape a better future for all. With a blend of creativity, curiosity, and determination, I'm excited to explore new horizons and contribute to the ever-evolving field of computer science. </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">my_projects</h2>
+            <div class="section-content">
+                <p><strong>GitHub:</strong> <a href="https://github.com/amysaad">github.com/amysaad</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="connect">
+        <div class="container">
+            <h2 class="section-title">connect_with_me</h2>
+            <div class="section-content contact-info">
+                <p>
+                    work_school_email: <a href="mailto:saad_amy@wheatoncollege.edu">saad_amy@wheatoncollege.edu</a><br>
+                    personal_email: <a href="mailto:amysaad98@gmail.com">amysaad98@gmail.com</a><br>
+                    linkedin_user: <a href="https://www.linkedin.com/in/amysaad8">linkedin/amysaad98</a><br>
+                    phone_num: (203) - 947 - 9184
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
